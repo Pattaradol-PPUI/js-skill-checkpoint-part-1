@@ -5,3 +5,12 @@ const inventory = [
   { name: "Orange", price: 30, quantity: 60 },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+let minQuantity = inventory[0].quantity; 
+
+for (i = 0 ; i < inventory.length ; i++){
+  if (inventory[i].quantity < minQuantity){
+    minQuantity = inventory[i].quantity;
+  }
+}
+
+console.log(minQuantity);
